@@ -1,0 +1,146 @@
+#container {
+  height: 100%;
+}
+
+.close-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.close-button-container img {
+  width: 2rem;
+  margin: 1.25rem;
+}
+
+.close-text-container {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1.25rem;
+}
+
+.close-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+
+#save-in-ranking {
+  height: 59%;
+}
+
+.input-block {
+  display: block;
+}
+
+.score-container {
+  margin-top: 6.625rem;
+}
+
+.score-container p {
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.score {
+  font-size: 6rem;
+  margin: -0.75rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.save-container {
+  margin-top: 2.5rem;
+  height: 22.598%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-container input {
+  background: initial;
+  width: 88.8%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 3px solid var(--color-secondary);
+  border-radius: 0.625rem;
+  padding-left: 1.313rem;
+  font-size: 1.5rem;
+  color: var(--color-text-complement);
+  outline: none;
+}
+
+.button-container {
+  margin: 1.25rem auto;
+  height: 22.598%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: var(--color-secondary);
+  width: 88.8%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--color-text-complement);
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  outline: none;
+}
+
+@media (min-width: 700px) {
+  .close-button-container img {
+    width: 3rem;
+    margin: 2.5rem 2.5rem 1.25rem auto;
+  }
+
+  .close-text {
+    font-size: 4rem;
+    color: var(--color-primary);
+  }
+
+  .score-container {
+    margin-top: 3.3125rem;
+  }
+
+  .score-container p {
+    font-size: 1.5rem;
+  }
+  
+  .score {
+    font-size: 7rem;
+  }
+
+  .save-container input {
+    background: initial;
+    width: 38.85rem;
+    height: 5rem;
+  }
+
+  button {
+    width: 38.85rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1100px) {
+  .close-button-container img {
+    margin-bottom: 1.875rem;
+  }
+}

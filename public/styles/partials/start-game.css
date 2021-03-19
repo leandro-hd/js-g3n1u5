@@ -1,0 +1,156 @@
+#container {
+  height: 100%;
+}
+
+.display-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 43.4%;
+}
+
+.display-number {
+  width: 9.375rem;
+  height: 9.375rem;
+  font-size: 6rem;
+  border: 3px solid var(--color-primary);
+  border-radius: 0.313rem;
+  margin: 3.438rem 6.563rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.keyboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 56.6%;
+}
+
+.keyboard-numbers-container {
+  width: 89%;
+  height: 94.41%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 1.188rem 2.25rem;
+}
+
+.keyboard-number {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  color: var(--color-text-complement);
+}
+
+#number01, #number02, #number03 {
+  border-top: 4px solid var(--color-secondary);
+}
+
+#number03, #number06, #number09 {
+  border-right: 4px solid var(--color-secondary);
+}
+
+#number07, #number08, #number09 {
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+#number01, #number04, #number07 {
+  border-left: 4px solid var(--color-secondary);
+}
+
+@media (min-width: 768px) {
+  .display-number {
+    width: 11.71875rem;
+    height: 11.71875rem;
+    font-size: 7.5rem;
+  }
+  
+  .keyboard-numbers-container {
+    width: 89%;
+    height: 94.41%;
+    border-right: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .keyboard-number {
+    font-size: 5rem;
+  }
+  
+  #number01, #number02, #number03, #number04, #number05 {
+    border-top: 4px solid var(--color-secondary);
+  }
+  
+  #number05, #number09 {
+    border-right: 4px solid var(--color-secondary);
+  }
+  
+  #number05, #number06, #number07, #number08, #number09 {
+    border-bottom: 4px solid var(--color-secondary);
+  }
+  
+  #number01, #number06 {
+    border-left: 4px solid var(--color-secondary);
+  }
+
+  #number03, #number06 {
+    border-right: 2px solid var(--color-secondary);
+  }
+
+  #number04, #number07 {
+    border-left: 2px solid var(--color-secondary);
+  }  
+}
+
+@media (min-width: 1024px) {
+  .display-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46.6%;
+  }
+
+  .display-number {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    font-size: 12rem;
+  }
+
+  .keyboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53.4%;
+  }
+
+   .keyboard-numbers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: none;
+  }
+
+  .keyboard-number {
+    font-size: 6rem;
+    width: 10%;
+    height: 50.352%;
+    border-top: 4px solid var(--color-secondary);
+    border-bottom: 4px solid var(--color-secondary);
+  }
+  
+  #number05 {
+    border-right: 2px solid var(--color-secondary);
+  }
+  
+  #number06 {
+    border-left: 2px solid var(--color-secondary);
+  }  
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>End Game</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../public/styles/main.css">
+  <link rel="stylesheet" href="../../public/styles/partials/end-game.css">
+</head>
+<body id="page-landing">
+  <div id="container">
+    <div class="close-button-container">
+      <a class="index" href="index.html">
+        <img src="../../public/images/icons/close.svg" alt="Fechar">
+      </a>
+    </div>
+    <div class="close-text-container">
+      <p class="close-text">Fim do Jogo</span>
+    </div>
+    <form action="./ranking.html" id="save-in-ranking" method="POST">
+      <div class="input-block score-container">
+        <p>score</p>
+        <span class="score" id="score"></span>
+      </div>
+      <div class="input-block save-container">
+        <input name="name" id="name" placeholder="Digite seu nome" required>
+      </div>
+      <div class="button-container">
+        <button type="submit" form="save-in-ranking">Salvar Ranking</button>
+      </div>
+    </form>    
+  </div>
+
+  <!-- Script -->
+  <script src="../../public/scripts/rankingSave.js"></script>
+</body>
+</html>
